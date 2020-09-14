@@ -26,5 +26,5 @@ photo = ImageTk.PhotoImage(img)
 label_img = tk.Label(root, image = photo)
 label_img.pack()
 
-root.geometry("+760+520")
+root.geometry("+780+530")
 root.mainloop()
