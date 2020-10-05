@@ -3,6 +3,7 @@ from PIL import Image, ImageTk
 import re
 import win32gui, win32con, win32com.client, win32api
 import time
+import os
 
 
 def _window_enum_callback(hwnd, wildcard):
@@ -28,8 +29,7 @@ def wake(event):
 
     time.sleep(0.1)
 
-    pop = tk.Toplevel()
-    pop.destroy()
+    # os.system("refresh.bat")
 
     time.sleep(1)
 
